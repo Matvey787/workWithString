@@ -31,6 +31,6 @@ char* my_strcpy(char* writeStr, const char* readStr)
 char* my_strncpy(char* writeStr, char* readStr, size_t n)
 {
     char* p_start = writeStr;
-	while ((n-- > 0) && (*writeStr++ = *readStr++));
+	while (n-- && (*writeStr++ = *readStr++));
 	return p_start;
 }
